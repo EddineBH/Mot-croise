@@ -1,0 +1,271 @@
+.test{
+  position : absolute;
+  height:  12 px;
+  width: 12 px;
+}
+
+
+/* Reset some default styles */
+body, h1, ul, li, form {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Style the header with a centered title */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+h3 {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+h4 {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+/* Style menu */
+ ul {
+  list-style: none;
+  background-color: #6a17bd;
+  text-align: left;
+  padding: 10px;
+}
+
+ul li {
+  display: inline;
+}
+
+ ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Style the login form */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px auto;
+  max-width: 400px;text-align:center; 
+   margin: 0 auto; 
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="email"],
+form input[type="password"],
+form input[name="nom"],
+form select[name="specialite"],
+form input[name="telephone"],
+form input[name="prenom"]{
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button[type="submit"] {
+  background-color: #6a17bd;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+p{
+text-align:center; 
+ margin: 0 auto; 
+  color: #fff;
+}
+/* Style the table */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+  box-shadow: 0 0 20px hex(0xFF8F1AFD);
+  background-color: #fff;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+table th {
+  background-color: #6a17bd;
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+
+/* Styles pour le flou d'arrière-plan */
+.blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Couleur et transparence du flou */
+  z-index: 1; /* Placez-le au-dessus de tous les autres éléments */
+  display: none; /* Par défaut, le flou est caché */
+}
+
+/* Styles pour le popup */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 2; /* Placez-le au-dessus du flou */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre légère */
+  display: none; /* Par défaut, le popup est caché */
+}
+
+.popup-content {
+  text-align: center;
+}
+
+/* Afficher le popup et le flou lorsque la classe active est appliquée */
+.blur.active,
+.popup.active {
+  display: block;
+}
+#popup_settings {
+  display: none;
+  position: fixed;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  background-color: transparent; /* Couleur de fond transparente */
+  padding-top: 20px;
+  border-radius: 0 20px 20px 0; /* Arrondir les angles à gauche */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* Couleur du texte */
+  display: block;
+}
+
+.content {
+  margin-left: 100px; /* Espacement pour laisser de la place à la barre de navigation */
+  padding: 20px;
+}
+
+.img {
+  width: 100%; /* Prendre la largeur de la barre de navigation */
+  height: auto;
+  max-width: 200px; /* Limite la largeur maximale de l'image */
+  display: block; /* Assure que l'image est affichée comme un bloc */
+  margin: 0 auto; /* Centre l'image horizontalement dans la barre de navigation */
+  padding-bottom: 10px;
+}
+
+.content {
+  margin-left: 200px; /* Espacement pour laisser de la place à la barre de navigation */
+  padding: 20px;
+}
+h1 {
+  color: #000;
+}
+.popup {
+  display: none;
+  position: fixed;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1001; /* Assure que le popup est au-dessus du fond flou */
+}
+.blur {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
+backdrop-filter: blur(5px); /* Effet de flou */
+z-index: 1000;
+display: none;
+}
+/* Nouveau style pour appliquer le flou au fond */
+.blur {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
+backdrop-filter: blur(5px); /* Effet de flou */
+z-index: 1000; /* Assure que le fond flou est au-dessus de tout le reste */
+display: none; /* Caché par défaut */
+}
+.img {
+
+width: 100%; /* Prendre la largeur de la barre de navigation */
+  height: auto;
+  max-width: 200px; /* Limite la largeur maximale de l'image */
+  display: block; /* Assure que l'image est affichée comme un bloc */
+  margin: 0 auto; /* Centre l'image horizontalement dans la barre de navigation */
+  padding-bottom: 10px; /
+}
